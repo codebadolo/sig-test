@@ -26,3 +26,4 @@ class EleveForm(forms.ModelForm):
             'parent': 'Nom du parent',
             'tel_parent': 'Téléphone du parent',
         }
+        #
