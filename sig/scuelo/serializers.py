@@ -8,6 +8,13 @@ class EleveSerializer(serializers.ModelSerializer):
         fields = '__all__'
         
         
+class ClassSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Eleve
+        fields = '__all__'
+                
+        
+        
         #fields = ['id', 'nom', 'prenom','date_enquete', 'condition_eleve', 'sex', 'date_naissance', 'cs_py', 
         #          'hand', 'annee_inscr', 'parent', 
         #          'tel_parent']
