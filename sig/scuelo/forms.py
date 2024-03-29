@@ -4,7 +4,12 @@ from django  import  forms
 class EleveForm(forms.ModelForm):
     class Meta:
         model = Eleve
-        fields = ['nom', 'prenom', 'condition_eleve', 'sex', 'date_naissance', 'cs_py', 'hand', 'parent', 'tel_parent']
+        fields = [
+            'nom', 'prenom', 'condition_eleve',
+            'sex', 'date_naissance', 'cs_py', 'hand', 
+            'parent', 'tel_parent'
+                  
+        ]
         widgets = {
             'date_naissance': forms.DateInput(attrs={'type': 'date'}),
         }

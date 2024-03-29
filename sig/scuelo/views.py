@@ -2,6 +2,13 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Eleve
 from .forms import EleveForm
 
+
+
+def home(request):
+    return render(request, 'scuelo/index.html')
+#/home/humbu/signassara/sig/scuelo/template/scuelo/mainlayout.html
+'''
+
 def eleve_list(request):
     eleves = Eleve.objects.all()
     return render(request, 'eleve_list.html', {'eleves': eleves})
@@ -38,3 +45,4 @@ def eleve_delete(request, pk):
         return redirect('eleve_list')
     return render(request, 'eleve_confirm_delete.html', {'eleve': eleve})
 
+'''
