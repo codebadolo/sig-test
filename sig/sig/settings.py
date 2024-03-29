@@ -15,7 +15,7 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap5',
-     'scuelo',
+    'scuelo',
 ]
 
 MIDDLEWARE = [
@@ -52,17 +52,15 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'sig.urls'
+
+# URL prefix for static files.
 STATIC_URL = '/staticfiles/'
-STATIC_ROOT = '/staticfiles/'
-STATICFILES_DIRS = [ 
-    os.path.join(BASE_DIR,"staticfiles")
-]
-#STATIC_ROOT =
-TEMPLATE_DIR = os.path.join(BASE_DIR,"templates")
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -74,6 +72,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'sig.wsgi.application'
 
