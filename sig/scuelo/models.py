@@ -35,9 +35,11 @@ CAUSUAL =(
     ("can", "cantine"),
     
 )
+
 class Eleve(models.Model):
     nom	= models.CharField(max_length =  34 ,   null  = False)
     prenom	 = models.CharField(max_length =  34 ,   null  = False )
+    #etat =  models.CharField(max_length  =  10  , choice = )
     date_enquete = models.DateTimeField(auto_now_add =  True)
     condition_eleve	= models.CharField(
         max_length =  34 ,
