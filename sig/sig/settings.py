@@ -53,6 +53,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'sig.urls'
 STATIC_URL = "/staticfiles/"
+STATICFILES_DIRS = [ 
+    os.path.join(BASE_DIR,"collected_static")
+]
+#STATIC_ROOT =
 TEMPLATE_DIR = os.path.join(BASE_DIR,"templates")
 TEMPLATES = [
     {
