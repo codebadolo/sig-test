@@ -76,7 +76,7 @@ class Classe(models.Model):
     nom_classe = models.CharField(max_length =  34)
     ordre_classe =  models.CharField(max_length =  4)
     eleve = models.ForeignKey(Eleve ,on_delete =models.CASCADE )
-    type_ecole = models.CharField(max_length =  14 ,  choices  = TYPE_ECOLE  ) 
+    type_ecole = models.CharField(max_length =  14 ,  choices  = TYPE_ECOLE  )
     
 # department=models.ForeignKey(Department, on_delete=models.CASCADE)
 
