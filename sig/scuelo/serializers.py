@@ -1,20 +1,20 @@
 
 from rest_framework import serializers
-from .models import Eleve
+from .models import Eleve ,  Classe
 
 class EleveSerializer(serializers.ModelSerializer):
     class Meta:
         model = Eleve
         fields = '__all__'
         
-        
-class ClassSerializer(serializers.ModelSerializer):
+class ClasseSerializer(serializers.ModelSerializer):
+    eleve_set = EleveSerializer(many=True, read_only=True)
     class Meta:
-        model = Eleve
-        fields = '__all__'
-                
+        model = Classe
+        fields = [
+            'id', 'nom_classe', 'ordre_classe',
+                  'type_ecole', 'eleve_set'
+        ]
         
         
-        #fields = ['id', 'nom', 'prenom','date_enquete', 'condition_eleve', 'sex', 'date_naissance', 'cs_py', 
-        #          'hand', 'annee_inscr', 'parent', 
-        #          'tel_parent']
+    

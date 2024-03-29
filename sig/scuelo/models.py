@@ -3,9 +3,9 @@ from django.db import models
 
 TYPE_ECOLE =( 
           
-    ("MATERNELLE", "CONF"),
-    ("PRIMAIRE", "ABAN"),
-    ("PROP", "PROP"),
+    ("MATERNELLE", "MATERNELLE"),
+    ("PRIMAIRE", "PRIMAIRE"),
+    
 )
 
     
@@ -18,7 +18,7 @@ HAND =(
     ("OUI", "OUI"),
     ("NON", "NON"),
 )
-HAND =(     
+CS_PY =(     
     ("CS", "CS"),
     ("Extra", "EXTRA"),
     ("PY", "PY"), 
@@ -36,6 +36,19 @@ CAUSUAL =(
     
 )
 
+NOM_CLASSE =(
+    ("PS", "PS"),
+    ("MS", "MS"),
+    ("GS", "GS"),
+    ("CP1", "CP1"),
+    ("CP2", "CP2"),
+    ("CE1", "CE1"),
+    ("CE2", "CE2"),
+    ("CM1", "CM1"),
+    ("CM2", "CM2"),
+    
+)
+
 class Eleve(models.Model):
     nom	= models.CharField(max_length =  34 ,   null  = False)
     prenom	 = models.CharField(max_length =  34 ,   null  = False )
@@ -47,7 +60,7 @@ class Eleve(models.Model):
     )
     sex= models.CharField(max_length =  10 , choices =  SEX)
     date_naissance	= models.DateField()
-    cs_py = models.CharField(max_length =  34)
+    cs_py = models.CharField(max_length =  34 , choices = CS_PY )
     hand = models.CharField(max_length =  34  , choices =  HAND )
     annee_inscr = models.DateField( auto_now_add = True)
     parent = models.CharField(max_length =  34 ,   null  = False)
