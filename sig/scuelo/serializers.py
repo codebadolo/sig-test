@@ -1,20 +1,21 @@
-
 from rest_framework import serializers
-from .models import Eleve ,  Classe
+from .models import Classe, Eleve, Paiement
+
+class PaiementSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Paiement
+        fields = '__all__'
 
 class EleveSerializer(serializers.ModelSerializer):
+    paiements = PaiementSerializer(many=True, read_only=True)
+
     class Meta:
         model = Eleve
-        fields = '__all__'
-        
+        fields = ['id', 'nom', 'prenom', 'date_enquete', 'condition_eleve', 'sex', 'date_naissance', 'cs_py', 'hand', 'annee_inscr', 'parent', 'tel_parent', 'paiements']
+
 class ClasseSerializer(serializers.ModelSerializer):
-    eleve_set = EleveSerializer(many=True, read_only=True)
+    eleves = EleveSerializer(many=True, read_only=True)
+
     class Meta:
         model = Classe
-        fields = [
-            'id', 'type_ecole' , 'nom_classe', 
-            'ordre_classe','eleve_set'
-        ]
-        
-        
-    
+        fields = ['id', 'nom_classe', 'ordre_classe', 'type_ecole', 'eleves']

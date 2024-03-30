@@ -1,17 +1,16 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from .views import ClasseViewSet, EleveViewSet, EleveDetailView
-
-router = DefaultRouter()
-router.register(r'eleves', EleveViewSet)
-router.register(r'classes', ClasseViewSet)
+from django.urls import path
+from .views import ClasseListView, EleveListView, EleveDetailView, PaiementCreateView
 
 urlpatterns = [
-    path('', include(router.urls)),
-    path('eleves/<int:pk>/', EleveDetailView.as_view(), name='eleve-detail'),
-]
+    # Endpoint for listing all classes
+    path('classes/', ClasseListView.as_view(), name='class-list'),
 
-# GET /eleves/: Retrieve a list of all students and create a new student.
-# GET /eleves/{id}/: Retrieve details about a specific student.
-# PUT /eleves/{id}/: Update a specific student.
-# DELETE /eleves/{id}/: Delete a specific student.
+    # Endpoint for listing students in a specific class
+    path('classes/<int:class_id>/students/', EleveListView.as_view(), name='student-list'),
+
+    # Endpoint for retrieving detailed information about a student
+    path('students/<int:pk>/', EleveDetailView.as_view(), name='student-detail'),
+
+    # Endpoint for creating a new payment for a student
+    path('students/<int:student_id>/payments/create/', PaiementCreateView.as_view(), name='payment-create'),
+]
