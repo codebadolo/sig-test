@@ -72,11 +72,11 @@ class Eleve(models.Model):
 class Classe(models.Model):
     
     #id= models.CharField(max_length =  34 , primary_key  =  True)
-    
-    nom_classe = models.CharField(max_length =  34)
+    type_ecole = models.CharField(max_length =  14 ,  choices  = TYPE_ECOLE  )
+    nom_classe = models.CharField(max_length =  34 , choices =  NOM_CLASSE)
     ordre_classe =  models.CharField(max_length =  4)
     eleve = models.ForeignKey(Eleve ,on_delete =models.CASCADE )
-    type_ecole = models.CharField(max_length =  14 ,  choices  = TYPE_ECOLE  )
+
     
 # department=models.ForeignKey(Department, on_delete=models.CASCADE)
 

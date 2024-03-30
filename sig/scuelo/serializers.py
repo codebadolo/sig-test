@@ -12,8 +12,8 @@ class ClasseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Classe
         fields = [
-            'id', 'nom_classe', 'ordre_classe',
-                  'type_ecole', 'eleve_set'
+            'id', 'type_ecole' , 'nom_classe', 
+            'ordre_classe','eleve_set'
         ]
         
         
