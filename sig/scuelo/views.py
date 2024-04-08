@@ -4,11 +4,19 @@ from .serializers import EleveSerializer , ClasseSerializer
 
 from rest_framework import generics
 from .models import Classe, Eleve, Paiement
-from .serializers import ClasseSerializer, EleveSerializer, PaiementSerializer
+from .serializers import ( ClasseSerializer, 
+                          EleveSerializer,
+                          PaiementSerializer,
+                          ClassCreationSerializer 
+)
+                          
 
 class ClasseListView(generics.ListAPIView):
     queryset = Classe.objects.all()
     serializer_class = ClasseSerializer
+
+class   ClasseCreateView(generics.CreateAPIView):
+    serializer_class = ClassCreationSerializer
 
 class EleveListView(generics.ListAPIView):
     serializer_class = EleveSerializer

@@ -1,9 +1,17 @@
 from django.urls import path
-from .views import ClasseListView, EleveListView, EleveDetailView, PaiementCreateView
+from .views import ( 
+                    ClasseListView, EleveListView,
+                    EleveDetailView, PaiementCreateView ,
+                    ClasseCreateView
+                    
+)
+
 
 urlpatterns = [
-    # Endpoint for listing all classes
+    # Endpoint for listing all classes  https://www.madinaharabic.com/arabic-language-course/lessons/
     path('classes/', ClasseListView.as_view(), name='class-list'),
+    
+    path('classescreate/', ClasseCreateView.as_view(), name='class-create'),
 
     # Endpoint for listing students in a specific class
     path('classes/<int:class_id>/students/', EleveListView.as_view(), name='student-list'),
