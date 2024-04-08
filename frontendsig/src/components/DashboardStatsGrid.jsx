@@ -1,11 +1,12 @@
 import React from 'react'
-
+import { HandStudent } from "./pages/HandStudent"
 export default function DashboardStatsGrid() {
 	return (
 		<div className="flex gap-4">
 			<BoxWrapper>
-			<div className="main"> 
-			this  is  the  dashboard  grid pages </div>
+		
+			<HandStudent></HandStudent>
+
 			</BoxWrapper>
 			
 		</div>
