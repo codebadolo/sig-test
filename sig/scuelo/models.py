@@ -12,9 +12,18 @@ CONDITION_ELEVE = (
     ("ABAN", "ABAN"),
     ("PROP", "PROP"),
 )
+# DA  ==   DEFFISCIENCE AUDITIVE
+# DM ==  DEF MOTRICE
+# DL ==   TROUBLE DU LANGUAGE
+# DV ==  VISUELLE
+# DI == INTELLECTUELLE
+
 HAND = (
-    ("OUI", "OUI"),
-    ("NON", "NON"),
+    ("DA", "OUI"),
+    ("DM", "NON"),
+    ("DM", "NON"),
+    ("DM", "NON"),
+
 )
 CS_PY = (
     ("CS", "CS"),
@@ -22,8 +31,8 @@ CS_PY = (
     ("PY", "PY"),
 )
 SEX = (
-    ("Fille", "Fille"),
-    ("Garcon", "Garcon"),
+    ("F", "F"),
+    ("M", "M"),
 )
 
 CAUSUAL = (
@@ -48,11 +57,16 @@ NOM_CLASSE = (
 )
 
 
+class Ecole(models.Model):
+    nom_ecole = models.CharField(max_length=30)
+    # other informations
+
+
 class Eleve(models.Model):
     nom = models.CharField(max_length=34, null=False)
     prenom = models.CharField(max_length=34, null=False)
     # etat =  models.CharField(max_length  =  10  , choice = )
-    date_enquete = models.DateTimeField(auto_now_add=True)
+    date_enquete = models.DateTimeField(auto_now_add=True)  # is  added right after
     condition_eleve = models.CharField(
         max_length=34,
         choices=CONDITION_ELEVE
@@ -61,7 +75,7 @@ class Eleve(models.Model):
     date_naissance = models.DateField()
     cs_py = models.CharField(max_length=34, choices=CS_PY)
     hand = models.CharField(max_length=34, choices=HAND)
-    annee_inscr = models.DateField(auto_now_add=True)
+    annee_inscr = models.DateField(auto_now_add=True) # the inscrption year
     parent = models.CharField(max_length=34, null=False)
     tel_parent = models.CharField(max_length=12, null=False)
 

@@ -2,13 +2,15 @@ from rest_framework import serializers
 from .models import Classe, Eleve, Paiement
 
 
+
 class PaiementSerializer(serializers.ModelSerializer):
+    #paid_eleve =  EleveSerializer(many = True  )
     class Meta:
         model = Paiement
         fields = '__all__'
 
-
 class EleveSerializer(serializers.ModelSerializer):
+    #  in order to call the list  of payments  of each student
     paiement = PaiementSerializer(many=True, read_only=True)
 
     class Meta:
@@ -17,7 +19,6 @@ class EleveSerializer(serializers.ModelSerializer):
                   'sex', 'date_naissance', 'cs_py', 'hand',
                   'annee_inscr', 'parent', 'tel_parent', 'paiements'
         ]
-
 
 class ClasseSerializer(serializers.ModelSerializer):
     eleves = EleveSerializer(many=True, read_only=True)
@@ -31,3 +32,4 @@ class ClassCreationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Classe
         fields = ['id', 'nom_classe', 'ordre_classe', 'type_ecole']
+

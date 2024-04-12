@@ -116,42 +116,52 @@ const HandStudent = () => {
                                                   </li>
                                               <li className="flex items-center">
                                                   <input id="logitech" type="checkbox" value=""
-                                                   className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                   className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                                                   />
                                                       <label htmlFor="logitech" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Logitech (97)</label>
                                                   </li>
                                               <li className="flex items-center">
-                                                  <input id="sony" type="checkbox" value="" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                  <input id="sony" type="checkbox" value="" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                                                   />
                                                       <label htmlFor="sony" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Sony (234)</label>
-                                                  </></li>
+                                                  </li>
                                               <li className="flex items-center">
                                                   <input id="asus" type="checkbox" value=""  className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
                                                       <label htmlFor="asus" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Asus (97)</label>
                                                   </li>
                                               <li className="flex items-center">
-                                                  <input id="dell" type="checkbox" value="" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                  <input id="dell" type="checkbox" value="" 
+                                                  className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                                                    />
                                                       <label htmlFor="dell" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Dell (56)</label>
-                                                  </></li>
+                                                  </li>
                                               <li className="flex items-center">
-                                                  <input id="msi" type="checkbox" value="" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                  <input id="msi" type="checkbox" value=""
+                                                   className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                                                  />
                                                       <label htmlFor="msi" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">MSI (97)</label>
-                                                  </></li>
+                                                  </li>
                                               <li className="flex items-center">
-                                                  <input id="canon" type="checkbox" value=""  className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                  <input id="canon" type="checkbox" value="" 
+                                                   className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                                                    />
                                                       <label htmlFor="canon" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Canon (49)</label>
-                                                  </></li>
+                                                  </li>
                                               <li className="flex items-center">
-                                                  <input id="benq" type="checkbox" value="" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                  <input id="benq" type="checkbox" value="" 
+                                                  className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
                                                       <label htmlFor="benq" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">BenQ (23)</label>
-                                                  </></li>
+                                                  </li>
                                               <li className="flex items-center">
-                                                  <input id="razor" type="checkbox" value="" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                  <input id="razor" type="checkbox" value=""
+                                                   className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
                                                       <label htmlFor="razor" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Razor (49)</label>
-                                                  </></li>
+                                                </li>
                                               <a href="#" className="flex items-center text-sm font-medium text-primary-600 dark:text-primary-500 hover:underline">View all</a>
                                           </ul>
                                       </div>
                                   </div>
-                                     < />!-- Price -->
+                             
                                   <h2 id="price-heading">
                                       <button type="button" className="flex items-center justify-between w-full py-2 px-1.5 text-sm font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700" data-accordion-target="#price-body" aria-expanded="true" aria-controls="price-body">
                                           <span>Price</span>
@@ -177,7 +187,10 @@ const HandStudent = () => {
                                       <div className="py-2 space-y-2 font-light border-b border-gray-200 dark:border-gray-600">
                                           <label className="relative flex items-center cursor-pointer">
                                               <input type="checkbox" value="" className="sr-only peer" name="shipping" />
-                                                  <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-primary-600"></div>
+                                                  <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] 
+                                                  after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full
+                                                   after:h-4 after:w-4 after:transition-all dark:border-gray-600
+                                                    peer-checked:bg-primary-600"></div>
                                                   <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">North America</span>
                                              </label>
                                           <label className="relative flex items-center cursor-pointer">
@@ -186,23 +199,27 @@ const HandStudent = () => {
                                                   <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">South America</span>
                                              </label>
                                           <label className="relative flex items-center cursor-pointer">
-                                              <input type="checkbox" value="" className="sr-only peer" name="shipping">
-                                                  <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-primary-600"></div>
-                                                  <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Asia</span>
-                                              </></label>
-                                          <label className="relative flex items-center cursor-pointer">
                                               <input type="checkbox" value="" className="sr-only peer" name="shipping" />
                                                   <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-primary-600"></div>
-                                                  <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Australia</span>
-                                              </></label>
+                                                  <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Asia</span>
+                                            </label>
                                           <label className="relative flex items-center cursor-pointer">
-                                              <input type="checkbox" value="" className="sr-only peer" name="shipping">
+                                              <input type="checkbox" value="" className="sr-only peer" name="shipping" />
+                                                  <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full 
+                                                  peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] 
+                                                  after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border
+                                                   after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-primary-600">                                       </div>
+                                                  <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Australia</span>
+                                              </>
+                                              </label>
+                                          <label className="relative flex items-center cursor-pointer">
+                                              <input type="checkbox" value="" className="sr-only peer" name="shipping"/>
                                                   <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-primary-600"></div>
                                                   <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Europe</span>
-                                              </></label>
+                                              </label>
                                       </div>
                                   </div>
-                                  < />!-- Rating -->
+                              
                                   <h2 id="rating-heading">
                                       <button type="button" className="flex items-center justify-between w-full py-2 px-1.5 text-sm font-medium text-left text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700" data-accordion-target="#rating-body" aria-expanded="true" aria-controls="rating-body">
                                           <span>Rating</span>
@@ -214,7 +231,7 @@ const HandStudent = () => {
                                   <div id="rating-body" className="hidden" aria-labelledby="rating-heading">
                                       <div className="py-2 space-y-2 font-light border-b border-gray-200 dark:border-gray-600">
                                           <div className="flex items-center">
-                                              <input id="five-stars" type="radio" value="" name="rating" className="w-4 h-4 bg-gray-100 border-gray-300 text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                              <input id="five-stars" type="radio" value="" name="rating" className="w-4 h-4 bg-gray-100 border-gray-300 text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
                                                   <label htmlFor="five-stars" className="flex items-center ml-2">
                                                       <svg aria-hidden="true" className="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                           <title>First star</title>
@@ -237,9 +254,9 @@ const HandStudent = () => {
                                                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                                       </svg>
                                                   </label>
-                                              </></div>
+                                              </div>
                                           <div className="flex items-center">
-                                              <input id="four-stars" type="radio" value="" name="rating" className="w-4 h-4 bg-gray-100 border-gray-300 text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                              <input id="four-stars" type="radio" value="" name="rating" className="w-4 h-4 bg-gray-100 border-gray-300 text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
                                                   <label htmlFor="four-stars" className="flex items-center ml-2">
                                                       <svg aria-hidden="true" className="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                           <title>First star</title>
@@ -262,9 +279,10 @@ const HandStudent = () => {
                                                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                                       </svg>
                                                   </label>
-                                              </></div>
+                                              </div>
                                           <div className="flex items-center">
-                                              <input id="three-stars" type="radio" value="" name="rating" checked="" className="w-4 h-4 bg-gray-100 border-gray-300 text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                              <input id="three-stars" type="radio" value="" name="rating" checked=""
+                                               className="w-4 h-4 bg-gray-100 border-gray-300 text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
                                                   <label htmlFor="three-stars" className="flex items-center ml-2">
                                                       <svg aria-hidden="true" className="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                           <title>First star</title>
@@ -287,9 +305,11 @@ const HandStudent = () => {
                                                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                                       </svg>
                                                   </label>
-                                              </></div>
+                                              </div>
                                           <div className="flex items-center">
-                                              <input id="two-stars" type="radio" value="" name="rating" className="w-4 h-4 bg-gray-100 border-gray-300 text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                              <input id="two-stars" type="radio" value="" name="rating" 
+                                              className="w-4 h-4 bg-gray-100 border-gray-300 text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                                               />
                                                   <label for="two-stars" className="flex items-center ml-2">
                                                       <svg aria-hidden="true" className="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                           <title>First star</title>
@@ -312,9 +332,10 @@ const HandStudent = () => {
                                                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                                       </svg>
                                                   </label>
-                                              </></div>
+                                              </div>
                                           <div className="flex items-center">
-                                              <input id="one-star" type="radio" value="" name="rating" className="w-4 h-4 bg-gray-100 border-gray-300 text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                              <input id="one-star" type="radio" value="" name="rating" 
+                                              className="w-4 h-4 bg-gray-100 border-gray-300 text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
                                                   <label for="one-star" className="flex items-center ml-2">
                                                       <svg aria-hidden="true" className="w-5 h-5 text-yellow-400" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                           <title>First star</title>
@@ -337,7 +358,7 @@ const HandStudent = () => {
                                                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                                       </svg>
                                                   </label>
-                                              </></div>
+                                              </div>
                                       </div>
                                   </div>
                               </div>
@@ -362,16 +383,17 @@ const HandStudent = () => {
                           </div>
                       </div>
                       </div>
-                 </section>
+                      </section>
                   <div className="overflow-x-auto">
                       <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                               <tr>
                                   <th scope="col" className="p-4">
                                       <div className="flex items-center">
-                                          <input id="checkbox-all" type="checkbox" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                          <input id="checkbox-all" type="checkbox" 
+                                          className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
                                               <label htmlFor="checkbox-all" className="sr-only">checkbox</label>
-                                          </></div>
+                                          </div>
                                   </th>
                                   <th scope="col" className="p-4">Product</th>
                                   <th scope="col" className="p-4">Category</th>
@@ -388,15 +410,17 @@ const HandStudent = () => {
                               <tr className="border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700">
                                   <td className="w-4 p-4">
                                       <div className="flex items-center">
-                                          <input id="checkbox-table-search-1" type="checkbox" onclick="event.stopPropagation()" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                          <input id="checkbox-table-search-1" type="checkbox" onclick="event.stopPropagation()"
+                                           className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                                            />
                                               <label for="checkbox-table-search-1" className="sr-only">checkbox</label>
-                                          </></div>
+                                          </div>
                                   </td>
                                   <th scope="row" className="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                       <div className="flex items-center mr-3">
-                                          <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-front-image.png" alt="iMac Front Image" className="w-auto h-8 mr-3">
+                                          <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-front-image.png" alt="iMac Front Image" className="w-auto h-8 mr-3" />
                                               Apple iMac 27&#34;
-                                          </></div>
+                                          </div>
                                   </th>
                                   <td className="px-4 py-3">
                                       <span className="bg-primary-100 text-primary-800 text-xs font-medium px-2 py-0.5 rounded dark:bg-primary-900 dark:text-primary-300">Desktop PC</span>
@@ -443,7 +467,7 @@ const HandStudent = () => {
                             
                               
                              
-                                      </div>
+                                
                                 
                           </tbody>
                       </table>
@@ -490,13 +514,19 @@ const HandStudent = () => {
                       </ul>
                   </nav>
               </div>
-          </div>
-      </section>< /></> <!-- End block --!>
-    <><div id="createProductModal" tabindex="-1" aria-hidden="true" className="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] md:h-full">
+   
+   
+              </div>
+   
+   
+   
+      
+    </section>
+    <div id="createProductModal" tabindex="-1" aria-hidden="true" className="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] md:h-full">
         <div className="relative w-full h-full max-w-3xl p-4 md:h-auto">
-            < />!-- Modal content -->
+            /** !-- Modal content -- **/
             <div className="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5">
-                < />!-- Modal header -->
+                /**-- Modal header -**/
                 <div className="flex items-center justify-between pb-4 mb-4 border-b rounded-t sm:mb-5 dark:border-gray-600">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Add Product</h3>
                     <button type="button" className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="createProductModal">
@@ -506,38 +536,65 @@ const HandStudent = () => {
                         <span className="sr-only">Close modal</span>
                     </button>
                 </div>
-                < />!-- Modal body -->
+                /**-- Modal body --**/
                 <form action="#">
                     <div className="grid gap-4 mb-4 sm:grid-cols-2">
                         <div>
                             <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Product Name</label>
-                            <input type="text" name="name" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type product name" required="">
-                            </></div>
+                            <input type="text" name="name" id="name" className="bg-gray-50 border border-gray-300
+                             text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full
+                              p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 
+                              dark:focus:border-primary-500" placeholder="Type product name" required=""
+                              />
+                            </div>
                         <div><label for="category" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label><select id="category" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"><option selected="">Select category</option><option value="TV">TV/Monitors</option><option value="PC">PC</option><option value="GA">Gaming/Console</option><option value="PH">Phones</option></select></div>
                         <div>
                             <label for="brand" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Brand</label>
-                            <input type="text" name="brand" id="brand" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Product brand" required="">
-                            </></div>
+                            <input type="text" name="brand" id="brand" className="bg-gray-50 border
+                             border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600
+                              focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400
+                               dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Product brand" required=""
+                               />
+                            </div>
                         <div>
                             <label for="price" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price</label>
-                            <input type="number" name="price" id="price" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="$2999" required="">
+                            <input type="number" name="price" id="price" className="bg-gray-50 border border-gray-300
+                             text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full
+                              p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500
+                               dark:focus:border-primary-500" placeholder="$2999" required=""
+                               />
                             </div>
                         <div className="grid gap-4 sm:col-span-2 md:gap-6 sm:grid-cols-4">
                             <div>
                                 <label for="weight" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Item weight (kg)</label>
-                                <input type="number" name="weight" id="weight" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="12" required="">
+                                <input type="number" name="weight" id="weight" 
+                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600
+                                 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white 
+                                 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="12" required=""
+                                 />
                                </div>
                             <div>
                                 <label for="length" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Lenght (cm)</label>
-                                <input type="number" name="length" id="length" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="105" required="">
-                                </></div>
+                                <input type="number" name="length" id="length" className="bg-gray-50 border border-gray-300
+                                 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 
+                                 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                  placeholder="105" required=""
+                                  />
+                                </div>
                             <div>
                                 <label for="breadth" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Breadth (cm)</label>
-                                <input type="number" name="breadth" id="breadth" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="15" required="">
-                                </></div>
+                                <input type="number" name="breadth" id="breadth" className="bg-gray-50 border border-gray-300
+                                 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 
+                                 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="15" required=""
+                                 />
+                                </div>
                             <div>
                                 <label for="width" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Width (cm)</label>
-                                <input type="number" name="width" id="width" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="23" required="">
+                                <input type="number" name="width" id="width" className="bg-gray-50 border border-gray-300
+                                 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block 
+                                 w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
+                                  dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="23" required=""
+                                  />
                                </div>
                         </div>
                         <div className="sm:col-span-2"><label for="description" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label><textarea id="description" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Write product description here"></textarea></div>
@@ -552,9 +609,10 @@ const HandStudent = () => {
                                 <label for="inline-2-checkbox" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Online selling only</label>
                            </div>
                         <div className="flex items-center mr-4">
-                            <input checked="" id="inline-checked-checkbox" type="checkbox" value="" name="sellingType" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <input checked="" id="inline-checked-checkbox" type="checkbox" value="" name="sellingType" 
+                            className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
                                 <label for="inline-checked-checkbox" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Both in-store and online</label>
-                            </></div>
+                            </div>
                     </div>
                     <div className="mb-4">
                         <span className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Product Images</span>
@@ -570,8 +628,8 @@ const HandStudent = () => {
                                     </p>
                                     <p className="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
                                 </div>
-                                <input id="dropzone-file" type="file" className="hidden">
-                                </></label>
+                                <input id="dropzone-file" type="file" className="hidden"/>
+                            </label>
                         </div>
                     </div>
                     <div className="items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
@@ -592,7 +650,7 @@ const HandStudent = () => {
                 </form>
             </div>
         </div>
-    </div>< /></>!-- drawer component -->
+    </div>/**  drawer component  ** /
     <><form action="#" id="drawer-update-product" className="fixed top-0 left-0 z-40 w-full h-screen max-w-3xl p-4 overflow-y-auto transition-transform -translate-x-full bg-white dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-update-product-label" aria-hidden="true">
         <h5 id="drawer-label" className="inline-flex items-center mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">New Product</h5>
         <button type="button" data-drawer-dismiss="drawer-update-product" aria-controls="drawer-update-product" className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
@@ -605,8 +663,9 @@ const HandStudent = () => {
             <div className="space-y-4 sm:col-span-2 sm:space-y-6">
                 <div>
                     <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Product Name</label>
-                    <input type="text" name="name" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="Apple iMac 27&ldquo;" placeholder="Type product name" required="">
-                    </></div>
+                    <input type="text" name="name" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
+                    dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="Apple iMac 27&ldquo;" placeholder="Type product name" required=""/>
+                    </div>
                 <div>
                     <label for="description" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
                     <div className="w-full border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
@@ -677,23 +736,23 @@ const HandStudent = () => {
                     <span className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Product Images</span>
                     <div className="grid grid-cols-3 gap-4 mb-4">
                         <div className="relative p-2 bg-gray-100 rounded-lg sm:w-36 sm:h-36 dark:bg-gray-700">
-                            <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-side-image.png" alt="imac image">
+                            <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-side-image.png" alt="imac image"/>
                                 <button type="button" className="absolute text-red-600 dark:text-red-500 hover:text-red-500 dark:hover:text-red-400 bottom-1 left-1">
                                     <svg aria-hidden="true" className="w-5 h-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
                                     </svg>
                                     <span className="sr-only">Remove image</span>
                                 </button>
-                            </></div>
+                            </div>
                         <div className="relative p-2 bg-gray-100 rounded-lg sm:w-36 sm:h-36 dark:bg-gray-700">
-                            <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-front-image.png" alt="imac image">
+                            <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-front-image.png" alt="imac image"/>
                                 <button type="button" className="absolute text-red-600 dark:text-red-500 hover:text-red-500 dark:hover:text-red-400 bottom-1 left-1">
                                     <svg aria-hidden="true" className="w-5 h-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
                                     </svg>
                                     <span className="sr-only">Remove image</span>
                                 </button>
-                            </></div>
+                            </div>
                         <div className="relative p-2 bg-gray-100 rounded-lg sm:w-36 sm:h-36 dark:bg-gray-700">
                             <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-back-image.png" alt="imac image"/>
                                 <button type="button" className="absolute text-red-600 dark:text-red-500 hover:text-red-500 dark:hover:text-red-400 bottom-1 left-1">
@@ -704,14 +763,14 @@ const HandStudent = () => {
                                 </button>
                            </div>
                         <div className="relative p-2 bg-gray-100 rounded-lg sm:w-36 sm:h-36 dark:bg-gray-700">
-                            <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-side-image.png" alt="imac image">
+                            <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-side-image.png" alt="imac image"/>
                                 <button type="button" className="absolute text-red-600 dark:text-red-500 hover:text-red-500 dark:hover:text-red-400 bottom-1 left-1">
                                     <svg aria-hidden="true" className="w-5 h-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
                                     </svg>
                                     <span className="sr-only">Remove image</span>
                                 </button>
-                            </></div>
+                            </div>
                     </div>
                     <div className="flex items-center justify-center w-full">
                         <label for="dropzone-file" className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
@@ -725,45 +784,71 @@ const HandStudent = () => {
                                 </p>
                                 <p className="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
                             </div>
-                            <input id="dropzone-file" type="file" className="hidden">
-                            </></label>
+                            <input id="dropzone-file" type="file" className="hidden"/>
+                            </label>
                     </div>
                 </div>
                 <div className="flex items-center mb-4">
-                    <input id="product-options" type="checkbox" value="" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <input id="product-options" type="checkbox" value=""
+                     className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                    />
                         <label for="product-options" className="ml-2 text-sm text-gray-500 dark:text-gray-300">Product has multiple options, like different colors or sizes</label>
-                    </></div>
+                    </div>
                 <div className="relative">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                         <svg aria-hidden="true" className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
                         </svg>
                     </div>
-                    <input datepicker="" id="datepicker" type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 datepicker-input" value="15/08/2022" placeholder="Select date">
-                    </></div>
+                    <input datepicker="" id="datepicker" type="text"
+                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm 
+                     rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full
+                      pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white 
+                      dark:focus:ring-primary-500 dark:focus:border-primary-500 datepicker-input" value="15/08/2022" 
+                      placeholder="Select date"
+                      />
+                    </div>
             </div>
             <div className="space-y-4 sm:space-y-6">
                 <div>
                     <label for="product-brand" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Brand</label>
-                    <input type="text" id="product-brand" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="Apple" placeholder="Product Brand" required="">
-                    </></div>
+                    <input type="text" id="product-brand"
+                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+                      focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 
+                      dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 
+                      dark:focus:border-primary-500" value="Apple" placeholder="Product Brand" required=""
+                      />
+                    </div>
                 <div><label for="category" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label><select id="category" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"><option selected="">Electronics</option><option value="TV">TV/Monitors</option><option value="PC">PC</option><option value="GA">Gaming/Console</option><option value="PH">Phones</option></select></div>
                 <div>
                     <label for="item-weight" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Item Weight (kg)</label>
-                    <input type="number" name="item-weight" id="item-weight" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="12" placeholder="Ex. 12" required="">
-                    </></div>
+                    <input type="number" name="item-weight" id="item-weight" className="bg-gray-50 border border-gray-300
+                     text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 
+                     dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                      value="12" placeholder="Ex. 12" required=""/>
+                    </div>
                 <div>
                     <label for="length" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Length (cm)</label>
-                    <input type="number" name="length" id="lenght" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="105" placeholder="Ex. 105" required="">
-                    </></div>
+                    <input type="number" name="length" id="lenght" className="bg-gray-50 border
+                     border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600
+                      focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600
+                       dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        value="105" placeholder="Ex. 105" required=""
+                        />
+                    </div>
                 <div>
                     <label for="breadth" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Breadth (cm)</label>
-                    <input type="number" name="breadth" id="breadth" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="15" placeholder="Ex. 15" required="">
-                    </></div>
+                    <input type="number" name="breadth" id="breadth" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600
+                     focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
+                     dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="15" placeholder="Ex. 15" required=""/>
+                    </div>
                 <div>
                     <label for="width" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Width (cm)</label>
-                    <input type="number" name="width" id="width" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="23" placeholder="Ex. 23" required="">
-                    </></div>
+                    <input type="number" name="width" id="width" 
+                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600
+                     block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500
+                      dark:focus:border-primary-500" value="23" placeholder="Ex. 23" required=""/>
+                    </div>
             </div>
         </div>
         <div className="grid grid-cols-2 gap-4 mt-6 sm:w-1/2">
@@ -775,7 +860,7 @@ const HandStudent = () => {
                 Delete
             </button>
         </div>
-    </form>< /></>!-- Preview Drawer -->
+    </form> /**-- Preview Drawer --** /</>
     <s><div id="drawer-read-product-advanced" className="fixed top-0 left-0 z-40 w-full h-screen max-w-lg p-4 overflow-y-auto transition-transform -translate-x-full bg-white dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-label" aria-hidden="true">
         <div>
             <h4 id="read-drawer-label" className="mb-1.5 leading-none text-xl font-semibold text-gray-900 dark:text-white">Apple iMac 25"</h4>
@@ -788,24 +873,24 @@ const HandStudent = () => {
             <span className="sr-only">Close menu</span>
         </button>
         <div className="grid grid-cols-3 gap-4 mb-4 sm:mb-5">
+            <div className="w-auto p-2 bg-gray-100 rounded-lg dark:bg-gray-700"/>
+                <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-side-image.png" alt="iMac Side Image"/>
+                </div>
             <div className="w-auto p-2 bg-gray-100 rounded-lg dark:bg-gray-700">
-                <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-side-image.png" alt="iMac Side Image">
-                </></div>
+                <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-front-image.png" alt="iMac Front Image"/>
+                </div>
             <div className="w-auto p-2 bg-gray-100 rounded-lg dark:bg-gray-700">
-                <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-front-image.png" alt="iMac Front Image">
-                </></div>
+                <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-back-image.png" alt="iMac Back Image"/>
+                </div>
             <div className="w-auto p-2 bg-gray-100 rounded-lg dark:bg-gray-700">
-                <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-back-image.png" alt="iMac Back Image">
-                </></div>
+                <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-side-image.png" alt="iMac Back Image"/>
+                </div>
             <div className="w-auto p-2 bg-gray-100 rounded-lg dark:bg-gray-700">
-                <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-side-image.png" alt="iMac Back Image">
-                </></div>
+                <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-back-image.png" alt="iMac Front Image"/>
+                </div>
             <div className="w-auto p-2 bg-gray-100 rounded-lg dark:bg-gray-700">
-                <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-back-image.png" alt="iMac Front Image">
-                </></div>
-            <div className="w-auto p-2 bg-gray-100 rounded-lg dark:bg-gray-700">
-                <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-side-image.png" alt="iMac Side Image">
-                </></div>
+                <img src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-side-image.png" alt="iMac Side Image"/>
+                </div>
         </div>
         <dl className="sm:mb-5"><dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Details</dt><dd className="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">Standard glass ,3.8GHz 8-core 10th-generation Intel Core i7 processor, Turbo Boost up to 5.0GHz, 16GB 2666MHz DDR4 memory, Radeon Pro 5500 XT with 8GB of GDDR6 memory, 256GB SSD storage, Gigabit Ethernet, Magic Mouse 2, Magic Keyboard - US.</dd></dl>
         <dl className="grid grid-cols-2 gap-4 mb-4">
@@ -884,6 +969,7 @@ const HandStudent = () => {
 </div>
 
 </div>
+</section>
     )
 }
 
