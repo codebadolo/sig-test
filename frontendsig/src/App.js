@@ -1,7 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import Layout from './components/shared/Layout'
 import Dashboard from './pages/Dashboard'
-import Products from "./pages/Products"
+import StudentPerClass from "./pages/StudentPerClass"
 
 function App() {
     return (
@@ -9,9 +9,9 @@ function App() {
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Dashboard />} />
-                    <Route path="products" element={<Products />} />
+                    <Route to="/cp1" element={<StudentPerClass />} />
                 </Route>
-                 
+                
             </Routes>
         </Router>
     )

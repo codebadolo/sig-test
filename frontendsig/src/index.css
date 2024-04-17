@@ -25,4 +25,9 @@
 	a {
 		@apply text-sky-500 hover:underline;
 	}
+h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; --font-sans: 'Inter'; }
+
+body { font-family: 'Inter', sans-serif; --font-sans: 'Inter'; }
+
 }
+

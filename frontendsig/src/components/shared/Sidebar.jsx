@@ -12,10 +12,10 @@ export default function Sidebar() {
 	
 
 	return (
-		<div className="bg-neutral-900 w-60 p-3 flex flex-col">
+		<div className="flex flex-col p-3 bg-white w-60">
 			<div className="flex items-center gap-2 px-1 py-3">
 				
-				<span className="text-neutral-200 text-lg">Nassara  SIG </span>
+				<span className="text-lg text-neutral-200">Nassara  SIG </span>
 			</div>
 			<div className="py-8 flex flex-1 flex-col gap-0.5">
 				{DASHBOARD_SIDEBAR_LINKS.map((link) => (

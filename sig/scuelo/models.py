@@ -57,11 +57,6 @@ NOM_CLASSE = (
 )
 
 
-class Ecole(models.Model):
-    nom_ecole = models.CharField(max_length=30)
-    # other informations
-
-
 class Eleve(models.Model):
     nom = models.CharField(max_length=34, null=False)
     prenom = models.CharField(max_length=34, null=False)
@@ -75,11 +70,19 @@ class Eleve(models.Model):
     date_naissance = models.DateField()
     cs_py = models.CharField(max_length=34, choices=CS_PY)
     hand = models.CharField(max_length=34, choices=HAND)
-    annee_inscr = models.DateField(auto_now_add=True) # the inscrption year
+    annee_inscr = models.DateField() # the inscrption year
     parent = models.CharField(max_length=34, null=False)
+    #nro_tenu = models.CharField()
     tel_parent = models.CharField(max_length=12, null=False)
 
+    type_ecole = models.CharField(max_length=14, choices=TYPE_ECOLE)
+    nom_classe = models.CharField(max_length=34, choices=NOM_CLASSE)
+    #ordre_classe = models.CharField(max_length=4)
+    #eleve = models.ForeignKey(Eleve, on_delete=models.CASCADE)
 
+
+
+'''
 class Classe(models.Model):
     # id= models.CharField(max_length =  34 , primary_key  =  True)
     type_ecole = models.CharField(max_length=14, choices=TYPE_ECOLE)
@@ -87,11 +90,14 @@ class Classe(models.Model):
     ordre_classe = models.CharField(max_length=4)
     eleve = models.ForeignKey(Eleve, on_delete=models.CASCADE)
 
+    class Meta:
+        pass
+'''
 
 # department=models.ForeignKey(Department, on_delete=models.CASCADE)
 
 class Paiement(models.Model):
-    eleve = models.ForeignKey(Eleve, on_delete=models.CASCADE)
+    #eleve = models.ForeignKey(Eleve, on_delete=models.CASCADE)
     causal = models.CharField(max_length=34, choices=CAUSUAL)
     montant = models.PositiveBigIntegerField(max_length=34)
     date_paiement = models.DateTimeField(auto_now_add=True)

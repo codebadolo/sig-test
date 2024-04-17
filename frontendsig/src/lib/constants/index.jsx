@@ -15,9 +15,17 @@ export const DASHBOARD_SIDEBAR_LINKS = [
 	{
 		key: 'products',
 		label: 'Products',
+		path: '/cp1',
+		icon: <HiOutlineCube />
+	},
+	{
+		key: 'products',
+		label: 'Products',
 		path: '/comptabilites',
 		icon: <HiOutlineCube />
 	},
+	
+
 
 ]
 
