@@ -74,7 +74,7 @@ class Eleve(models.Model):
     parent = models.CharField(max_length=34, null=False)
     #nro_tenu = models.CharField()
     tel_parent = models.CharField(max_length=12, null=False)
-
+    
     type_ecole = models.CharField(max_length=14, choices=TYPE_ECOLE)
     nom_classe = models.CharField(max_length=34, choices=NOM_CLASSE)
     # ordre_classe = models.CharField(max_length=4)
@@ -82,19 +82,8 @@ class Eleve(models.Model):
 
 
 
-'''
-class Classe(models.Model):
-    # id= models.CharField(max_length =  34 , primary_key  =  True)
-    type_ecole = models.CharField(max_length=14, choices=TYPE_ECOLE)
-    nom_classe = models.CharField(max_length=34, choices=NOM_CLASSE)
-    ordre_classe = models.CharField(max_length=4)
-    eleve = models.ForeignKey(Eleve, on_delete=models.CASCADE)
 
-    class Meta:
-        pass
-'''
 
-# department=models.ForeignKey(Department, on_delete=models.CASCADE)
 
 class Paiement(models.Model):
     #eleve = models.ForeignKey(Eleve, on_delete=models.CASCADE)
