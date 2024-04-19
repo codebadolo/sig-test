@@ -1,3 +1,4 @@
+'''
 from rest_framework import viewsets, generics
 #from .serializers import EleveSerializer  #ClasseSerializer
 
@@ -31,14 +32,14 @@ from .serializers import (
 #list   of  the classes
 
 #list of student of a class
-'''
+
+
 class ClasseListView(generics.ListAPIView):
     queryset = Classe.objects.all()
     serializer_class = ClasseSerializer
 
 class ClasseCreateView(generics.CreateAPIView):
     serializer_class = ClassCreationSerializer
-'''
 
 class Eleve(generics.CreateAPIView):
     serializer_class = EleveSerializer
@@ -51,17 +52,15 @@ class EleveListView(generics.ListAPIView):
     #add a payment   to this student
     #  total of payement
     #changer class
-'''    def get_queryset(self):
+   def get_queryset(self):
         class_id = self.kwargs['class_id']
         return Eleve.objects.filter(classe_id=class_id)
-'''
 
-'''
 class EleveDetailView(generics.RetrieveAPIView):
     queryset = Eleve.objects.all()
     serializer_class = EleveSerializer
     # be also able to
-'''
+
 
 
 class PaiementCreateView(generics.CreateAPIView):
@@ -71,3 +70,4 @@ class PaiementCreateView(generics.CreateAPIView):
     # and a question that i  have to ask is how  it is deal
     # external student  how   their are deal
 
+'''

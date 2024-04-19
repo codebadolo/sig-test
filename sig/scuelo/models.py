@@ -77,7 +77,7 @@ class Eleve(models.Model):
     
     type_ecole = models.CharField(max_length=14, choices=TYPE_ECOLE)
     nom_classe = models.CharField(max_length=34, choices=NOM_CLASSE)
-    # ordre_classe = models.CharField(max_length=4)
+    #ordre_classe = models.CharField(max_length=4)
     #eleve = models.ForeignKey(Eleve, on_delete=models.CASCADE)
 
 
