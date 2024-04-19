@@ -60,7 +60,7 @@ NOM_CLASSE = (
 class Eleve(models.Model):
     nom = models.CharField(max_length=34, null=False)
     prenom = models.CharField(max_length=34, null=False)
-    # etat =  models.CharField(max_length  =  10  , choice = )
+
     date_enquete = models.DateTimeField(auto_now_add=True)  # is  added right after
     condition_eleve = models.CharField(
         max_length=34,
@@ -72,13 +72,12 @@ class Eleve(models.Model):
     hand = models.CharField(max_length=34, choices=HAND)
     annee_inscr = models.DateField() # the inscrption year
     parent = models.CharField(max_length=34, null=False)
-    #nro_tenu = models.CharField()
+
     tel_parent = models.CharField(max_length=12, null=False)
     
-    type_ecole = models.CharField(max_length=14, choices=TYPE_ECOLE)
+    type_ecole = models.CharField(max_length=20, choices=TYPE_ECOLE)
     nom_classe = models.CharField(max_length=34, choices=NOM_CLASSE)
-    #ordre_classe = models.CharField(max_length=4)
-    #eleve = models.ForeignKey(Eleve, on_delete=models.CASCADE)
+   
 
 
 
@@ -86,8 +85,8 @@ class Eleve(models.Model):
 
 
 class Paiement(models.Model):
-    #eleve = models.ForeignKey(Eleve, on_delete=models.CASCADE)
+    
     causal = models.CharField(max_length=34, choices=CAUSUAL)
-    montant = models.PositiveBigIntegerField(max_length=34)
+    montant = models.PositiveBigIntegerField()
     date_paiement = models.DateTimeField(auto_now_add=True)
-    note_Paiement = models.CharField(max_length=200, blank=True)
+    note_Paiement = models.CharField(max_length=200, blank=True )
