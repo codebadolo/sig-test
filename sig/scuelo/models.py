@@ -1,11 +1,5 @@
 from django.db import models
 
-TYPE_ECOLE = (
-
-    ("MATERNELLE", "MATERNELLE"),
-    ("PRIMAIRE", "PRIMAIRE"),
-
-)
 
 CONDITION_ELEVE = (
     ("CONF", "CONF"),
@@ -19,10 +13,10 @@ CONDITION_ELEVE = (
 # DI == INTELLECTUELLE
 
 HAND = (
-    ("DA", "OUI"),
-    ("DM", "NON"),
-    ("DM", "NON"),
-    ("DM", "NON"),
+    ("DA", "DA"),
+    ("DM", "DM"),
+    ("DL", "DL"),
+    ("DV", "DV"),
 
 )
 CS_PY = (
@@ -56,11 +50,23 @@ NOM_CLASSE = (
 
 )
 
+TYPE_ECOLE = (
+    ("MATERNELLE", "MATERNELLE"),
+    ("PRIMAIRE", "PRIMAIRE"),
+
+)
+
+
+class Paiement(models.Model):
+    
+    causal = models.CharField(max_length=34, choices=CAUSUAL)
+    montant = models.PositiveBigIntegerField()
+    date_paiement = models.DateTimeField(auto_now_add=True)
+    note_Paiement = models.CharField(max_length=200, blank=True )
 
 class Eleve(models.Model):
     nom = models.CharField(max_length=34, null=False)
     prenom = models.CharField(max_length=34, null=False)
-
     date_enquete = models.DateTimeField(auto_now_add=True)  # is  added right after
     condition_eleve = models.CharField(
         max_length=34,
@@ -72,21 +78,7 @@ class Eleve(models.Model):
     hand = models.CharField(max_length=34, choices=HAND)
     annee_inscr = models.DateField() # the inscrption year
     parent = models.CharField(max_length=34, null=False)
-
     tel_parent = models.CharField(max_length=12, null=False)
-    
     type_ecole = models.CharField(max_length=20, choices=TYPE_ECOLE)
     nom_classe = models.CharField(max_length=34, choices=NOM_CLASSE)
-   
-
-
-
-
-
-
-class Paiement(models.Model):
-    
-    causal = models.CharField(max_length=34, choices=CAUSUAL)
-    montant = models.PositiveBigIntegerField()
-    date_paiement = models.DateTimeField(auto_now_add=True)
-    note_Paiement = models.CharField(max_length=200, blank=True )
+    paiment_set  =models.ForeignKey(Paiement , on_delete=models.CASCADE)
