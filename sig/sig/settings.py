@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'scuelo',
+    'jazzmin',
     'corsheaders',
 
 ]
@@ -112,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fr'
 
 TIME_ZONE = 'UTC'
 
@@ -136,3 +137,9 @@ CORS_ORIGIN_ALLOW_ALL = True
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+JAZZMIN_UI_TWEAKS = {
+
+    "theme": "flatly",
+    "dark_mode_theme": "darkly",
+}

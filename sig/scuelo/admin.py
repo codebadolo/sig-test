@@ -1,6 +1,14 @@
 from django.contrib import admin
 from  .models import Paiement , Eleve
+from django.contrib import admin
 
+class SicAdminArea(admin.AdminSite):
+    site_header = 'SICS NASSARA'
+    site_title = 'SICS NASSARA'
+    index_title = 'SICS NASSARA'
+
+sics_site = SicAdminArea(name='SICS NASSARA')
+sics_site.register(Paiement)
 
 class EleveAdmin(admin.ModelAdmin):
     list_display = [
@@ -9,22 +17,14 @@ class EleveAdmin(admin.ModelAdmin):
     ] # 
     search_fields = ['nom', 'prenom']
     list_filter = ['nom_classe']
-    list_select_related = ["paiement_set"]
-    ordering = ["nom_classe"]
-    #readonly_fields = ['paiement_set']  # Display related payments as readonly
-
-    #def paiement_set(self, obj):
-        #return obj.paiement_set.all()  # Access related payments using manager
-    
-    
+    list_select_related = ['paiement_set']
     # Add 'nom_classe' to filter by class
-    def get_group_by(self, request):
-        return ['nom_classe']
+
+sics_site.register(Eleve , EleveAdmin)
+#admin.site.register(Eleve, EleveAdmin)
+#admin.site.site_header = 'SICS NASSARA'
+#admin.site.site_title = 'SICS NASSARA'
+#admin.site.index_title = 'SICS NASSARA'
 
 
-    # ... other configurations from previous example
-admin.site.register(Eleve, EleveAdmin)
-admin.site.register(Paiement)
-
-admin.site.site_header = 'SICS NASSARA'
 #admin.site. = 'Admin Customization'

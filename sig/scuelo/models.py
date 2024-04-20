@@ -81,4 +81,13 @@ class Eleve(models.Model):
     tel_parent = models.CharField(max_length=12, null=False)
     type_ecole = models.CharField(max_length=20, choices=TYPE_ECOLE)
     nom_classe = models.CharField(max_length=34, choices=NOM_CLASSE)
-    paiment_set  =models.ForeignKey(Paiement , on_delete=models.CASCADE)
+    paiment_set  =models.ForeignKey(Paiement,   on_delete=models.CASCADE , default='am coming')
+
+    def  __str__(self):
+        return self.nom
+
+    class  Meta:
+        verbose_name =   'Eleve'
+        #order_by = 'nom_classe'
+        verbose_name_plural =  'Eleves'
+
