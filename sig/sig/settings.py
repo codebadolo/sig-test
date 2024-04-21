@@ -142,13 +142,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 JAZZMIN_SETTINGS = {
     "site_title": "SICS NASSARA",
     "site_header": "SICS NASSARA",
-    "site_brand": "your_site_brand",
+    "site_brand":"SICS NASSARA",
     "site_icon": "/home/humbu/signassara/sig/sig/logonassara.jpg",
     # Add your own branding here
     "site_logo":  None ,#'/home/humbu/signassara/sig/sig/logonassara.jpg',
     "welcome_sign": "Welcome to the your_site_name",
     # Copyright on the footer
-    "copyright": "your_site_name",
+    "copyright": "SICS NASSARA",
     "user_avatar": None,
     ############
     # Top Menu #
@@ -156,7 +156,7 @@ JAZZMIN_SETTINGS = {
     # Links to put along the top menu
     "topmenu_links": [
         # Url that gets reversed (Permissions can be added)
-        {"name": "your_site_name", "url": "home", "permissions": ["auth.view_user"]},
+        {"name": "SICS NASSARA", "url": "home", "permissions": ["auth.view_user"]},
         # model admin to link to (Permissions checked against model)
         {"model": "auth.User"},
     ],

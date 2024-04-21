@@ -7,9 +7,7 @@ class  PaimentInline(admin.TabularInline):
     '''raw_id_fields = ['causal', 'montant',
                     'date_paiement',
                     'note_paiement']
-                    '''
-
-    
+    '''
 
 class SicAdminArea(admin.AdminSite):
     site_header = 'SICS NASSARA'
@@ -47,12 +45,12 @@ class EleveAdmin(admin.ModelAdmin):
     
     inlines =[PaimentInline ,]
     
-    '''
+    
     list_display = [
         'nom', 'prenom', 'condition_eleve',
         'sex','type_ecole', 'nom_classe'
-    ] #
-    '''
+    ]
+    
     #list_select_related =
     search_fields = ['nom', 'prenom']
     list_filter = ['nom_classe']
@@ -60,22 +58,36 @@ class EleveAdmin(admin.ModelAdmin):
     #list_select_related = ['paiment_set']
     #list_select_related = ['paiement_set']
     # Add 'nom_classe' to filter by class
-
-
-
+    
+    def __str__( self ):
+        return self.name 
+   
 
 class PaiementAdmin(admin.ModelAdmin):
-    list_display = ['causal', 'montant',
-                    'date_paiement',
-                    'note_paiement'
-                    ]
-    filter_horizontal = True
+    
+    list_display = [
+        'causal', 'montant',
+        'date_paiement','note_paiement'
+    ]
+    #filter_horizontal = True
     
     
     list_select_related= ["eleve_payment"]
     #inlines = [ EleveInline ,]
     
+    def get_list_display(self, request):
+        # Add 'section' to list_display
+        return super().get_list_display(request) + ['section']
     
+    def section(self, obj):
+        # Custom method to display the class section
+        return obj.nom_classe
+    
+    section.admin_order_field = 'nom_classe'  # Enable sorting by section
+    
+    def get_list_display_links(self, request, list_display):
+        # Disable editing links for 'section' column
+        return ['nom']
 
 
 sics_site.register(Paiement)

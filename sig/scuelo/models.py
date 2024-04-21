@@ -76,8 +76,10 @@ class Eleve(models.Model):
     nom_classe = models.CharField(max_length=34, choices=NOM_CLASSE)
     note_eleve = models.CharField(max_length=240, null=True)
     
-    def __str__(self):
-        return self.nom
+    
+    #def class QuerySet(models.QuerySet):
+       # pass
+    
 
     #@prope rty
     #def effectif(self):
@@ -98,7 +100,7 @@ class Paiement(models.Model):
     eleve_payment = models.ForeignKey(Eleve, on_delete=models.CASCADE,  default=1 )
     
     
-    def __str__(self) -> str:
-        return  self.causal 
+    
+    
     
      
