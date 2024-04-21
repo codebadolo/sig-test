@@ -1,4 +1,6 @@
+from urllib import request
 from django.db import models
+from django.contrib import messages
 
 CONDITION_ELEVE = (
     ("CONF", "CONF"),
@@ -77,13 +79,29 @@ class Eleve(models.Model):
     note_eleve = models.CharField(max_length=240, null=True)
     
     
-    #def class QuerySet(models.QuerySet):
-       # pass
+    def __str__(self):
+        return f"{self.nom} {self.prenom}"
     
-
-    #@prope rty
-    #def effectif(self):
-    #pass
+    @property
+    def an_insc(self):
+        return self.annee_inscr.year
+    
+    '''def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        messages.success(request, f'vous avez enregister l\'eleve {self.nom} {self.prenom} de la classe  de  {self.nom_classe}') 
+    '''
+    def get_queryset(self, request):
+        # Group students by nom_classe
+        queryset = Eleve.objects.all().prefetch_related('nom_classe')  # Prefetch for efficiency
+        grouped_queryset = {}
+        for eleve in queryset:
+            classe = eleve.nom_classe.pk  # Get the primary key of nom_classe
+            if classe not in grouped_queryset:
+                grouped_queryset[classe] = []
+            grouped_queryset[classe].append(eleve)
+        return grouped_queryset
+    
+    
     class Meta:
         verbose_name = 'Eleve'
         #order_by = 'nom_classe'
@@ -95,7 +113,7 @@ class Eleve(models.Model):
 class Paiement(models.Model):
     causal = models.CharField(max_length=34, choices=CAUSUAL)
     montant = models.PositiveBigIntegerField()
-    date_paiement = models.DateTimeField(auto_now_add=True)
+    date_paiement = models.DateTimeField()
     note_paiement = models.CharField(max_length=200, blank=True)
     eleve_payment = models.ForeignKey(Eleve, on_delete=models.CASCADE,  default=1 )
     
