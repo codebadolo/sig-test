@@ -43,7 +43,7 @@ class EleveAdmin(admin.ModelAdmin):
          )
     )
     
-    inlines =[PaimentInline ,]
+    
     
     
     list_display = [
@@ -51,6 +51,7 @@ class EleveAdmin(admin.ModelAdmin):
         'sex','type_ecole', 'nom_classe'
     ]
     
+    jazzmin_section_order = ('nom_class')
     #list_select_related =
     search_fields = ['nom', 'prenom']
     list_filter = ['nom_classe']
@@ -58,9 +59,10 @@ class EleveAdmin(admin.ModelAdmin):
     #list_select_related = ['paiment_set']
     #list_select_related = ['paiement_set']
     # Add 'nom_classe' to filter by class
+    inlines =[PaimentInline ,]
     
     def __str__( self ):
-        return self.name 
+        return self.name
    
 
 class PaiementAdmin(admin.ModelAdmin):
@@ -69,13 +71,14 @@ class PaiementAdmin(admin.ModelAdmin):
         'causal', 'montant',
         'date_paiement','note_paiement'
     ]
-    #filter_horizontal = True
+    # filter_horizontal = True
     
     
     list_select_related= ["eleve_payment"]
-    #inlines = [ EleveInline ,]
+    # inlines = [ EleveInline ,]
+    #readonly_fields = ["elevepayment"]
     
-    def get_list_display(self, request):
+    '''def get_list_display(self, request):
         # Add 'section' to list_display
         return super().get_list_display(request) + ['section']
     
@@ -87,10 +90,12 @@ class PaiementAdmin(admin.ModelAdmin):
     
     def get_list_display_links(self, request, list_display):
         # Disable editing links for 'section' column
-        return ['nom']
+        return ['nom_classe']
+        '''
+    
 
 
-sics_site.register(Paiement)
+sics_site.register(Paiement , PaiementAdmin)
 #sics_site.register(Paiement, PaiementAdmin)
 
 

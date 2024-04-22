@@ -141,13 +141,15 @@ CORS_ORIGIN_ALLOW_ALL = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 JAZZMIN_SETTINGS = {
-    "site_title": "SICS NASSARA",
-    "site_header": "SICS NASSARA",
-    "site_brand":"SICS NASSARA",
-    "site_icon": "/home/humbu/signassara/sig/sig/logonassara.jpg",
+    "theme": "flatly",
+    "dark_mode_theme": "darkly",
+    "site_title": "SICS NASARA",
+    #"site_header": "SICS NASARA",
+    "site_brand":"SICS NASARA",
+    #"site_icon": "/static/sig/logonassara.jpg",
     # Add your own branding here
-    "site_logo":  None ,#'/home/humbu/signassara/sig/sig/logonassara.jpg',
-    "welcome_sign": "Welcome to the your_site_name",
+    "site_logo":'img/logonassara-removebg-preview.png' ,#'/home/humbu/signassara/sig/sig/logonassara.jpg',
+    "welcome_sign": "BIENVENUE AU SICS   DE  NASARA",
     # Copyright on the footer
     "copyright": "SICS NASSARA",
     "user_avatar": None,
@@ -178,7 +180,7 @@ JAZZMIN_SETTINGS = {
         "admin.LogEntry": "fas fa-file",
     },
     # # Icons that are used when one is not manually specified
-    "default_icon_parents": "fas fa-chevron-circle-right",
+    #"default_icon_parents": "fas fa-chevron-circle-right",
     "default_icon_children": "fas fa-arrow-circle-right",
     #################
     # Related Modal #
@@ -190,10 +192,11 @@ JAZZMIN_SETTINGS = {
     #############
     # Relative paths to custom CSS/JS scripts (must be present in static files)
     # Uncomment this line once you create the bootstrap-dark.css file
-    # "custom_css": "css/bootstrap-dark.css",
+    #"custom_css": "/static/jazzmin/css/main.css",
     "custom_js": None,
+    "custom_css": "common/css/main.css",
     # Whether to show the UI customizer on the sidebar
-    "show_ui_builder": False,
+    "show_ui_builder": True,
     ###############
     # Change view #
     ###############

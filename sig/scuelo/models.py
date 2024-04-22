@@ -62,21 +62,21 @@ TYPE_ECOLE = (
 class Eleve(models.Model):
     nom = models.CharField(max_length=34, null=False)
     prenom = models.CharField(max_length=34, null=False)
-    date_enquete = models.DateTimeField()  # is  added right after
+    date_enquete = models.DateTimeField(blank=True)  # is  added right after
     condition_eleve = models.CharField(
-        max_length=34,
+        max_length=4,
         choices=CONDITION_ELEVE
     )
-    sex = models.CharField(max_length=10, choices=SEX)
+    sex = models.CharField(max_length=1, choices=SEX)
     date_naissance = models.DateField()
-    cs_py = models.CharField(max_length=34, choices=CS_PY)
-    hand = models.CharField(max_length=34, choices=HAND)
-    annee_inscr = models.DateField()  # the inscrption year
+    cs_py = models.CharField(max_length=6, choices=CS_PY)
+    hand = models.CharField(max_length=2, choices=HAND  , default="")
+    annee_inscr = models.CharField(max_length=4)  # the inscrption year
     parent = models.CharField(max_length=34, null=False)
-    tel_parent = models.CharField(max_length=12, null=False)
-    type_ecole = models.CharField(max_length=20, choices=TYPE_ECOLE)
-    nom_classe = models.CharField(max_length=34, choices=NOM_CLASSE)
-    note_eleve = models.CharField(max_length=240, null=True)
+    tel_parent = models.CharField(max_length=24, null=False)
+    type_ecole = models.CharField(max_length=14, choices=TYPE_ECOLE)
+    nom_classe = models.CharField(max_length=4, choices=NOM_CLASSE)
+    note_eleve = models.CharField(max_length=240, blank=True ,default='')
     
     
     def __str__(self):
@@ -86,7 +86,8 @@ class Eleve(models.Model):
     def an_insc(self):
         return self.annee_inscr.year
     
-    '''def save(self, *args, **kwargs):
+    '''
+    def save(self, *args, **kwargs):
         super().save(*args, **kwargs)
         messages.success(request, f'vous avez enregister l\'eleve {self.nom} {self.prenom} de la classe  de  {self.nom_classe}') 
     '''
@@ -104,14 +105,15 @@ class Eleve(models.Model):
     
     class Meta:
         verbose_name = 'Eleve'
-        #order_by = 'nom_classe'
+        # order_by = 'nom_classe'
         
         verbose_name_plural = 'Eleves'
-        
+
 
 
 class Paiement(models.Model):
     causal = models.CharField(max_length=34, choices=CAUSUAL)
+
     montant = models.PositiveBigIntegerField()
     date_paiement = models.DateTimeField()
     note_paiement = models.CharField(max_length=200, blank=True)
@@ -119,6 +121,14 @@ class Paiement(models.Model):
     
     
     
-    
-    
+    class Meta:
+        verbose_name = 'Paiement'
+        #order_by = 'nom_classe'
+        
+        verbose_name_plural = 'Paiements'
+
+
+       
+    def __str__(self):
+        return f"{self.causal} {self.montant}"
      

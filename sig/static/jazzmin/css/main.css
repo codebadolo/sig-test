@@ -66,7 +66,7 @@ div.inline-related {
 }
 
 .table thead th {
-    color: #64748b;
+    color: #ff7b00;
     border-bottom: 0;
 }
 
@@ -76,7 +76,8 @@ div.inline-related {
 
 .inline-related .tabular {
     background-color: white;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    
+    box-shadow: 0 1px 1px #ff7b00 ;
 }
 
 td.djn-td,
@@ -113,7 +114,7 @@ tr.djn-tr>.original {
 }
 
 .object-tools .historylink {
-    background-color: #3c8dbc;
+    background-color: #ff7b00;
     width: 100%;
     display: block;
     padding: 5px;
@@ -180,7 +181,7 @@ table.dataTable thead .sorting_desc_disabled::after {
 }
 
 .select2-results__option {
-    color: black;
+    color: #ff7b00;
 }
 
 #changelist-search .form-group {
@@ -229,7 +230,7 @@ input[type="text"]
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #495057;
+    color: #ff7b00;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
@@ -420,7 +421,7 @@ input[type="text"]
 
 .calendarnav-next {
     right: 10px;
-    background: url(../img/calendar-icons.svg) 0 -30px no-repeat;
+    background: url(../img/logonassara-removebg-preview.png) 0 -30px no-repeat;
 }
 
 .calendarbox .calendarnav-next:focus,
